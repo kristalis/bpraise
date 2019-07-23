@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Rehearsal;
+use App\Pwlist;
 
 class HomeController extends Controller
 {
@@ -25,7 +26,9 @@ class HomeController extends Controller
     public function index()
     {
        $bnrehearsal = Rehearsal::where('userId','=',\Auth::user()->id)->get();
-       return view('home',['bnrehearsal'=>$bnrehearsal]);
+       $bnworship = Pwlist::where('userId','=',\Auth::user()->id)->get();
+
+       return view('home',['bnrehearsal'=>$bnrehearsal, 'bnworship'=>$bnworship]);
     
     }
 }
