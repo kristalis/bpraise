@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app1')
 
 @section('content')
 
@@ -13,9 +13,7 @@
                         <div class="row">
                            
                         @foreach($bnrehearsal as $bnrehearsals) 
-                        @if($bnrehearsals == null)
-                            No Rehearsals Playlist Yet
-                            @endif
+                        
                         <div class="video-grid col-xs-6 col-sm-4 col-md-3">
                             <div class="video">
                                 <div class="thumbnail">

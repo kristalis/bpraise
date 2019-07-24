@@ -5,6 +5,7 @@
 /vendor
 /database
 /routes
+/layouts
 .env
 .phpunit.result.cache
 Homestead.json

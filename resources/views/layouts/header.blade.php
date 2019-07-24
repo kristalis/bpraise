@@ -9,7 +9,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/app0.css" rel="stylesheet">
 
     <!-- Scripts -->
    
@@ -94,7 +94,11 @@
         @if (Auth::guest())
     <a href="#/" class="active">Home</a> 
     @else
-    <a href="{{ route('home') }}" class="active">Dashboard</a> 
+    <a href="{{ route('home') }}" class="">Dashboard</a> 
+    <a href="{{ route('rehearsal.create') }}" class="">Rehearsals</a> 
+    <a href="{{ route('group.create') }}" class="">Rehearsals</a> 
+
+
 
     @endif
     <a href="#/trending" class="">News & Events</a> 
